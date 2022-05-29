@@ -139,7 +139,6 @@ a{
 
 .emailLine{
     position: fixed;
-    
     left: auto;
     right: 20px;
     bottom:0px;
@@ -166,7 +165,7 @@ a{
     }
     .email,.email span{
         cursor:pointer;
-        
+        font-size: 180%;
         width: 40px;
         position:block;
         

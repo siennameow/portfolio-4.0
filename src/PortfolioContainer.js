@@ -166,7 +166,7 @@ class PortfolioContainer extends PureComponent {
 
   RightBar(){
     return <div className="emailLine">
-            <div className="email"><span onClick={()=> this.addTab("Contact")}>siennameow</span></div>
+            <div className="email"><span onClick={()=> this.addTab("Contact")}>Sienna_Li</span></div>
            </div>
   }
 
