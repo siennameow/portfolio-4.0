@@ -9,6 +9,7 @@ import About from './Components/About/About';
 import ContactMe from './Components/ContactMe/ContactMe';
 import Experience from './Components/Experience/Experience';
 import Work from './Components/Work/Work';
+import Footer from './Components/Footer/Footer'
 
 class PortfolioContainer extends PureComponent {
   state = {
@@ -152,6 +153,17 @@ class PortfolioContainer extends PureComponent {
     );
   }
 
+  FooterLinks(){
+    return <ul className="links">
+            {
+              Footer.map((footerItem,index)=>{
+                const Icon = footerItem.icon;
+                return <li key={`link-key-${index}`}><a href={footerItem.link} target="_blank" rel="noreferrer"><Icon className="svg" title=""/></a></li>
+              })
+            }
+          </ul>
+  }
+
   RightBar(){
     return <div className="emailLine">
             <div className="email"><span onClick={()=> this.addTab("Contact")}>siennameow</span></div>
@@ -172,6 +184,8 @@ class PortfolioContainer extends PureComponent {
     <div id="app">
       {this.navigationButtons()}
 
+      {this.FooterLinks()}
+      
       {this.RightBar()}
 
       {this.TerminalTabs()}
