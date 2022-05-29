@@ -1,10 +1,10 @@
 //This is the portfolio container
 //Render the page and Navbar
 import React, { PureComponent } from 'react';
-import classNames from 'classnames/bind';
+// import classNames from 'classnames/bind';
 import styles from './App.css';
 
-import Terminal from'./Terminals/Terminal'
+// import Terminal from'./Terminals/Terminal'
 import About from './Components/About/About';
 import ContactMe from './Components/ContactMe/ContactMe';
 import Experience from './Components/Experience/Experience';
@@ -137,6 +137,7 @@ class PortfolioContainer extends PureComponent {
 
   TerminalTabs(){
     let id = 0;
+    let classNames  = null;
     let cx = classNames.bind(styles);
     return (
       <ol id="tabs">
@@ -185,17 +186,17 @@ class PortfolioContainer extends PureComponent {
       {this.navigationButtons()}
 
       {this.FooterLinks()}
-      
+
       {this.RightBar()}
 
       {this.TerminalTabs()}
-
+{/* 
       <Terminal 
         addTab = {this.addTab}
         removeTab = {this.removeTab}
         display = {this.state.tabs[0].displayed ? "" : "hideTerminal"}
         inView = {this.state.tabs[0].displayed}>   
-      </Terminal>
+      </Terminal> */}
       {this.DisplayCurrentWindow()}
       <a href="https://github.com/siennameow/portfolio-4.0" target="_blank" id="footer" rel="noreferrer">Created and Designed by Sienna Li</a>
     </div>
