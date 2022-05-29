@@ -6,9 +6,9 @@
     text-align: center;
 
     opacity:0;
-    animation: loadIn 1s;
+    animation: aboutload .4s;
     animation-fill-mode:forwards !important;
-}
+} 
 .input{
     background-color:var(--fontColor);
     cursor:default;
