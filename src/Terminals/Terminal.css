@@ -1,0 +1,257 @@
+@media only screen and (max-width: 650px) {/*Smaller than 750px*/
+    .main{
+        width:95vw;
+        height:100vh;
+        margin-top:0px;
+    }
+    h2{
+        margin-top:60px;
+        font-size:17vw;
+    }
+    #command-line{
+        margin-bottom:60px;
+    }
+}
+@media only screen and (min-width: 650px) {/*Larger than 751px*/
+    .main{
+        width:calc(100vw - 200px);
+        height:calc(100vh - 180px);
+        margin-top:99px;
+    }
+    h2{
+        font-size:70px;
+    }
+}
+
+
+:root{
+    /*Animations*/
+    --typingSpeed:2s;
+    --delay:2s;
+    --steps:40;
+
+    /*Colors*/
+    --darkBlue:#01014a;
+    --darkColor:#011eda5b;
+    --crymson:#a488ff;
+    --yellow:#ffdf00;
+    --terminalGreen:#feb4cce7;
+
+}
+
+@font-face {
+    font-family: '2 Lines Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../Resources/fonts/2_lines.woff') format('woff');
+    }
+
+*{
+    margin:0px;
+    padding:0px;
+    border:none 0px;
+    background:none;
+    outline:none;
+    font-family:monospace;
+    font-size:15px;
+    letter-spacing:2px;  
+   
+    cursor:default;
+}
+
+.main{
+    background-color:var(--darkColor);
+    position:fixed;
+    background-image:linear-gradient(300deg, #000,var(--darkBlue));
+
+
+    color:var(--terminalGreen);
+
+
+    left:50%;
+    transform:translate(-50%,0%);
+   
+    border:2px solid var(--darkColor);
+    border-radius:0px 0px 10px 10px;;
+    
+    border-top: 0px solid transparent;
+
+    padding:20px;
+
+ 
+   overflow: scroll;
+
+   z-index:1;
+
+   
+
+}
+.hideTerminal{
+    height:0px!important;
+    width:0px!important;
+    padding:0px!important;
+    border:none!important;
+    margin:0px!important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+#command-line{
+   
+    display:relative;
+    list-style-type: none;
+}
+
+    h2{
+        font-family:'2 Lines Regular',monospace;
+        color:var(--crymson);
+        height:auto!important;
+    }
+    .attention{
+        font-size:130%;
+    }
+    .I{
+        color:var(--yellow);
+    }
+    .indented{
+        overflow-wrap: break-word;
+        
+        width:calc(100% - 80px);
+        padding-left:80px;
+    }
+
+
+
+@keyframes typewriter {
+    from {width:0;height:0;}
+    1%{opacity:1; height:auto;}
+    to{width:calc(100%);opacity:1;height:auto;}
+    99%{white-space: nowrap;}
+    100%{white-space: normal;}
+  }
+@keyframes typewriterIndented {
+from {width:0;height:0;}
+1%{opacity:1; height:auto;}
+to{width:calc(100% - 80px);opacity:1;height:auto;}
+99%{white-space: nowrap;}
+100%{white-space: normal;}
+}
+  .css-typing{
+      counter-reset:count;
+      counter-increment: count 2;
+  }
+.css-typing h2:nth-child(1){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+ 
+    animation: typewriter var(--typingSpeed) steps(var(--steps), end);
+    animation-fill-mode:forwards !important;
+}
+.css-typing h3:nth-child(2){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+ 
+    animation: typewriter var(--typingSpeed) steps(var(--steps), end);
+    animation-delay:calc(var(--delay));
+    animation-fill-mode:forwards;
+}
+
+.css-typing p:nth-child(3){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriter var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 2);
+    animation-fill-mode: forwards;   
+}
+
+.css-typing p:nth-child(4){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriter var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 3);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(5){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriter var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 4);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(6){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriterIndented var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 5);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(7){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriterIndented var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 5);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(8){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriterIndented var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 5);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(9){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriterIndented var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 5);;
+    animation-fill-mode: forwards;   
+}
+.css-typing p:nth-child(10){
+    height:0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: typewriterIndented var(--typingSpeed) steps(var(--steps), end);
+
+    animation-delay:calc(var(--delay) * 5);;
+    animation-fill-mode: forwards;   
+}
+
+
+h3{
+    font-size:20px;
+}
+input{
+    color:transparent;   
+    text-shadow: 0 0 0 #1adafc;
+    width:100%;
+    font-family:monospace;
+    
+}
+
+
+
+
