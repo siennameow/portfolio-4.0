@@ -110,26 +110,6 @@
 }
 
 
-
-.technologies{
-    list-style:none;
-    width:50%;
-    margin-left:15px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 300px));
-}
-.technologies li{
-    padding-bottom:10px;
-}
-.technologies li::before {
-    content: "\25AA";
-    color: var(--yellow);
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-  }
-
 .school{
     color:var(--yellow);
     transition:text-decoration 1s;
