@@ -23,6 +23,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={gitpro}
                title="Git Productive"
+               description="Task management app for developers to stay productive."
                linkApp="https://git-productive.herokuapp.com/"
                linkGithub="https://github.com/siennameow/git-productive"
               />
@@ -31,6 +32,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={techship}
                title="Techship"
+               description="A full-stack tech blog site with Star Wars theme."
                linkApp="https://techship.herokuapp.com/"
                linkGithub="https://github.com/siennameow/tech-blog"
               />
@@ -39,6 +41,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={dream}
                title="Dreamcatcher"
+               description="A code editor app that can be downloaded and used offline."
                linkApp="https://dreamcatcher-texteditor.herokuapp.com/"
                linkGithub="https://github.com/siennameow/text-editor"
               />
@@ -47,6 +50,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={portfolio}
                title="My portfolio-3.0"
+               description="Built up with express.js routes serving up HTML Pages."
                linkApp="https://sienna-portfolio3.herokuapp.com/"
                linkGithub="https://github.com/siennameow/portfolio-3.0"
               />
@@ -55,6 +59,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={weather}
                title="Weather Dashboard"
+               description="Use OpenWeather API to fetch weather informaton."
                linkApp="https://siennameow.github.io/Weather-Dashboard/"
                linkGithub="https://github.com/siennameow/Weather-Dashboard"
               />
@@ -63,6 +68,7 @@ const Work = () => {
               <ProjectCard 
                  imgPath={codequiz}
                title="Code Quiz"
+               description="A JavaScript Code Quiz challenge has 8 questions."
                linkApp="https://siennameow.github.io/Code-Quiz/"
                linkGithub="https://github.com/siennameow/Code-Quiz"
               />
