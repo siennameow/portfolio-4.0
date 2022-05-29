@@ -4,14 +4,14 @@
 import React from 'react';
 import './Experience.css';
 import '../../Terminals/Terminal.css'
-
+import resume from '../../Resources/util/resume.pdf'
 const Experience = () =>{
     return(
     <div className = "experience main">
         <div>
             <div className="container">
                 <span className="title">
-                    <h1>Download my <a className="resume" href="./Resources/util/resume.pdf" style={{color: "pink", fontSize: "40px"}} target="_blank" rel="noreferrer" >Resume</a></h1>
+                    <h1>Download my <a className="resume" href={resume} style={{color: "pink", fontSize: "40px"}} target="_blank" rel="noreferrer">Resume📝</a></h1>
                 </span>
                 <br></br>
                 <p>Here are a few technologies I've worked with recently:<br/>⠀</p>

@@ -15,8 +15,8 @@ const ContactMe = () =>{
             <h3>Contact Me</h3>
             <p>If you have a question or simply want to say hello.</p>
             <input data-testid='email' className="input" id="email" type="email" placeholder="Your Email"></input>
-            <input data-testid='subject' className="input" id="subject" type="text" placeholder="What You Want to Talk About"></input>
-            <textarea data-testid='text-box' id="content"></textarea>
+            <input data-testid='subject' className="input" id="subject" type="text" placeholder="Title"></input>
+            <textarea data-testid='text-box' id="content" placeholder="Talk About Anything"></textarea>
             <input data-testid='submitButton' type="submit" className="Submit" value="Submit"></input>
         </form>
     </div>
