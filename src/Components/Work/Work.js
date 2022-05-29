@@ -17,55 +17,49 @@ const Work = () => {
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title1"
-               description="description 1"
-               linkApp="Live link 1"
-               linkGithub="Github link 1"
+               title="Git Productive"
+               linkApp="https://git-productive.herokuapp.com/"
+               linkGithub="https://github.com/siennameow/git-productive"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title2"
-               description="description 2"
-               linkApp="Live link 2"
-               linkGithub="Github link 2"
+               title="Weather Dashboard"
+               linkApp="https://siennameow.github.io/Weather-Dashboard/"
+               linkGithub="https://github.com/siennameow/Weather-Dashboard"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title3"
-               description="description3"
-               linkApp="Live link 3"
-               linkGithub="Github link 3"
+               title="Techship"
+               linkApp="https://techship.herokuapp.com/"
+               linkGithub="https://github.com/siennameow/tech-blog"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title4"
-               description="description4"
-               linkApp="Live link 4"
-               linkGithub="Github link 4"
+               title="Dreamcatcher"
+               linkApp="https://dreamcatcher-texteditor.herokuapp.com/"
+               linkGithub="https://github.com/siennameow/text-editor"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title5"
-               description="description5"
-               linkApp="Live link 5"
-               linkGithub="Github link 5"
+               title="Note Taker"
+               linkApp="https://note-taker-platinum.herokuapp.com/"
+               linkGithub="https://github.com/siennameow/note-taker"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
                //   imgPath={}
-               title="title6"
-               description="description6"
-               linkApp="Live link 6"
-               linkGithub="Github link 6"
+               title="Code Quiz"
+               linkApp="https://siennameow.github.io/Code-Quiz/"
+               linkGithub="https://github.com/siennameow/Code-Quiz"
               />
             </Col>
           </Row>
