@@ -13,7 +13,7 @@ return(
                 <div  className="header">
                     <h1>About Me</h1>
                 </div>
-                <p>Hello there! I'm a web developer and designer based in San Francisco Bay Area.<br/>⠀</p>
+                <p>Hello there! I'm Sienna Li! I'm a web developer and designer based in San Francisco Bay Area.<br/>⠀</p>
                 <p>Having spent a large chunk of my life in arts and music, I've finally found my passion at the web design and technology. I'm an exceptionally creative designer and a coding elf.<br/>⠀</p>
                 <p>Currently I'm a student at <a className="school"href="https://bootcamp.berkeley.edu/coding/" target="_blank" rel="noreferrer">UC Berkeley Bootcamp</a> and spend most of my time designing websites. 
                 When I'm not busy, you can find me obsessing over food, cats and traveling. 

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Work.css';
 import '../../Terminals/Terminal.css'
+import { Container} from "react-bootstrap";
 
 const Work = () =>{
     // const [showAllRepos,toggleShowAllRepos] = useToggle(false);
     return(
+<Container fluid className="project-section">
     <div className = "main">
         <div className="projects">
             <div className="workHeader">
@@ -13,6 +15,7 @@ const Work = () =>{
             {/* <ProjectCard > */}
         </div>
     </div>
+</Container>
     );
 }
 
