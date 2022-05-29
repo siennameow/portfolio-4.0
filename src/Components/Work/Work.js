@@ -18,9 +18,54 @@ const Work = () => {
               <ProjectCard 
                //   imgPath={}
                title="title1"
-               description="description1"
+               description="description 1"
                linkApp="Live link 1"
                linkGithub="Github link 1"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+               //   imgPath={}
+               title="title2"
+               description="description 2"
+               linkApp="Live link 2"
+               linkGithub="Github link 2"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+               //   imgPath={}
+               title="title3"
+               description="description3"
+               linkApp="Live link 3"
+               linkGithub="Github link 3"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+               //   imgPath={}
+               title="title4"
+               description="description4"
+               linkApp="Live link 4"
+               linkGithub="Github link 4"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+               //   imgPath={}
+               title="title5"
+               description="description5"
+               linkApp="Live link 5"
+               linkGithub="Github link 5"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+               //   imgPath={}
+               title="title6"
+               description="description6"
+               linkApp="Live link 6"
+               linkGithub="Github link 6"
               />
             </Col>
           </Row>
