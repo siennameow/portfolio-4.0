@@ -197,7 +197,7 @@ class PortfolioContainer extends PureComponent {
         inView = {this.state.tabs[0].displayed}>   
       </Terminal>
       {this.DisplayCurrentWindow()}
-      <a href="https://github.com/siennameow/portfolio-4.0" target="_blank" id="footer" rel="noreferrer">Created and Designed by Sienna Li</a>
+      <a href="https://github.com/siennameow/portfolio-4.0" target="_blank" id="footer" rel="noreferrer">©️2022 | Made with 💛 by Sienna Li</a>
     </div>
     );
   }
