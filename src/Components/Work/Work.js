@@ -3,7 +3,12 @@ import "./Work.css";
 import "../../Terminals/Terminal.css";
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from "react-bootstrap";
-
+import gitpro from "../../Resources/images/gitpro.png";
+import weather from "../../Resources/images/weather.png";
+import techship from "../../Resources/images/techship.png";
+import dream from "../../Resources/images/dream.png";
+import portfolio from "../../Resources/images/portfolio.png";
+import codequiz from "../../Resources/images/codequiz.png";
 const Work = () => {
   // const [showAllRepos,toggleShowAllRepos] = useToggle(false);
   return (
@@ -16,7 +21,7 @@ const Work = () => {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard 
-               //   imgPath={}
+                 imgPath={gitpro}
                title="Git Productive"
                linkApp="https://git-productive.herokuapp.com/"
                linkGithub="https://github.com/siennameow/git-productive"
@@ -24,15 +29,7 @@ const Work = () => {
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
-               //   imgPath={}
-               title="Weather Dashboard"
-               linkApp="https://siennameow.github.io/Weather-Dashboard/"
-               linkGithub="https://github.com/siennameow/Weather-Dashboard"
-              />
-            </Col>
-            <Col md={4} className="project-card">
-              <ProjectCard 
-               //   imgPath={}
+                 imgPath={techship}
                title="Techship"
                linkApp="https://techship.herokuapp.com/"
                linkGithub="https://github.com/siennameow/tech-blog"
@@ -40,7 +37,7 @@ const Work = () => {
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
-               //   imgPath={}
+                 imgPath={dream}
                title="Dreamcatcher"
                linkApp="https://dreamcatcher-texteditor.herokuapp.com/"
                linkGithub="https://github.com/siennameow/text-editor"
@@ -48,15 +45,23 @@ const Work = () => {
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
-               //   imgPath={}
-               title="Note Taker"
-               linkApp="https://note-taker-platinum.herokuapp.com/"
-               linkGithub="https://github.com/siennameow/note-taker"
+                 imgPath={portfolio}
+               title="My portfolio-3.0"
+               linkApp="https://sienna-portfolio3.herokuapp.com/"
+               linkGithub="https://github.com/siennameow/portfolio-3.0"
               />
             </Col>
             <Col md={4} className="project-card">
               <ProjectCard 
-               //   imgPath={}
+                 imgPath={weather}
+               title="Weather Dashboard"
+               linkApp="https://siennameow.github.io/Weather-Dashboard/"
+               linkGithub="https://github.com/siennameow/Weather-Dashboard"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard 
+                 imgPath={codequiz}
                title="Code Quiz"
                linkApp="https://siennameow.github.io/Code-Quiz/"
                linkGithub="https://github.com/siennameow/Code-Quiz"

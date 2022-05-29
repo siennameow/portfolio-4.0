@@ -4,14 +4,14 @@ import Button from "react-bootstrap/Button";
 
 function ProjectCards(props) {
     return (
-      <Card className="project-card-view" style={{marginBottom: 20}}>
+      <Card className="project-card-view" style={{marginBottom: 20, backgroundColor:'#2f3b7e'}}>
         <Card.Img variant="top" src={props.imgPath} alt="card-img" />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Button variant="warning" href={props.linkApp} target="_blank" style={{marginBottom: 5, marginRight: 5}}>
             {"View Live"}
           </Button>
-          <Button variant="warning" href={props.linkGithub} target="_blank" style={{marginBottom: 5, marginRight: 5}}>
+          <Button variant="secondary" href={props.linkGithub} target="_blank" style={{marginBottom: 5, marginRight: 5}}>
             {"Github Repo"}
           </Button>
         </Card.Body>

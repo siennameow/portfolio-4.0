@@ -7,7 +7,7 @@
     --yellow:#ffdf00;
     --darkBlue:#01014a;
 
-
+    --darklue:#2f3b7e;
     --width:650px;
 }
 
@@ -165,7 +165,7 @@ a{
     }
     .email,.email span{
         cursor:pointer;
-        font-size: 180%;
+        font-size: 130%;
         width: 40px;
         position:block;
         
