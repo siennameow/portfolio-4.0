@@ -1,70 +1,100 @@
-# My React Portfolio
+# My Portfolio 4.0🔥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/portfolio-4.0/blob/main/LICENSE)
 
-## Available Scripts
+Hi, I’m Sienna Li! 👋
 
-In the project directory, you can run:
+I'm a web developer and designer based in San Francisco Bay Area. Having spent a large chunk of my life in arts and music, I've finally found my passion at the web design and technology. I'm an exceptionally creative and dependable entry Level Web Developer with a stellar customer service record and superb work ethic. Highly adept at conveying complex technical information to a variety of professional and lay audiences in a clear and understandable manner. 
 
-### `npm start`
+## Description 📝 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This Portfolio website is deployed: https://siennameow.github.io/portfolio-4.0/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio website is built up with [React](https://reactjs.org/). Core skills including: React, JSX,CSS, Javascript and Bootstrap. It presentes with About, Projects and Contact information about me. You can also download my resume. It is designed to work with different screen sizes as you need. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents 📖
 
-### `npm run build`
+* [Webpage Preview ⭐](#webpage-preview-)
+* [Sections 📚](#sections-)
+* [Usage 💡](#usage-)
+* [Technologies 🔧](#technologies-)
+* [License 📜](#license-)
+* [Authors 👩](#authors-)
+* [Credits 🙌](#credits-)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Webpage Preview ⭐
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Desktop Version
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mobile Version  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Sections 📚
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+✔️ About Me\
+✔️ Projects and Works\
+✔️ Project Preview Image\
+✔️ Project Name\
+✔️ Link to Github and deployed app\
+✔️ Skills\
+✔️ Downloadable Resume
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage 💡
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The link of the webpage is: https://siennameow.github.io/portfolio-4.0/
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you want to use the template to create your own portfolio, you can :
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Step 1
+    - create github repository for your portfolio.
+- Step 2
+    - Option 1: 🍴 Fork this repo!
+    - Option 2: 👯 Clone this repo to your local machine.
+- Step 3
+    - Run `npm i` in your terminal to install the dependencies
+    - Start building your code in your own folder 🔨🔨🔨
+    - Modify the content in the src file
+    - Run `npm run build` to build your own app.
+- Step 4
+    - Deploy your portfolio page( Use`gh-pages` package and `npm run deploy`).
 
-### `npm run build` fails to minify
+## Technologies 🔧
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [React](https://reactjs.org/)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JSX](https://reactjs.org/docs/introducing-jsx.html)
+* [Bootstrap](https://getbootstrap.com/)
+* [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/)
+* [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+## License 📜
+© 2022 Sienna Li, All Rights Reserved. Licensed under[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/portfolio-4.0/blob/main/LICENSE)
+
+## Authors 👩
+
+* **Sienna Li** 
+
+- [Portfolio](https://sienna-portfolio3.herokuapp.com/)
+- [Github](https://github.com/siennameow)
+- [LinkedIn](https://www.linkedin.com/in/hexuanli/)
+
+
+## Credits 🙌
+
+Thanks to the following people who helped me in this project:
+- Jerome Chenette
+- Manuel Nunes
+- Vince Lee
