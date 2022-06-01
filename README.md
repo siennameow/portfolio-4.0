@@ -8,9 +8,9 @@ I'm a web developer and designer based in San Francisco Bay Area. Having spent a
 
 ## Description 📝 
 
-This Portfolio website is deployed: https://siennameow.github.io/portfolio-4.0/
+The Portfolio is deployed here : https://siennameow.github.io/portfolio-4.0/
 
-This portfolio website is built up with [React](https://reactjs.org/). Core skills including: React, JSX,CSS, Javascript and Bootstrap. It presentes with About, Projects and Contact information about me. You can also download my resume. It is designed to work with different screen sizes as you need. 
+This portfolio website is built up with [React](https://reactjs.org/). It is a fully interactive terminal inspired portfolio page. Core skills including: React, JSX,CSS, Javascript and Bootstrap. It presentes with About, Projects and Contact information about me. You can also download my resume. It is designed to work with different screen sizes as you need. 
 
 
 ## Table of Contents 📖
@@ -80,7 +80,7 @@ If you want to use the template to create your own portfolio, you can :
 * [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## License 📜
-© 2022 Sienna Li, All Rights Reserved. Licensed under[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/portfolio-4.0/blob/main/LICENSE)
+© 2022 Sienna Li, All Rights Reserved. Licensed under  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/siennameow/portfolio-4.0/blob/main/LICENSE)
 
 ## Authors 👩
 
