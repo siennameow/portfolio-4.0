@@ -84,26 +84,19 @@ const ContactMe = () =>{
             <input data-testid='name' className="input form-control" value={name} id="name" type="text" placeholder="Your Name" onChange={handleInputChange} onMouseLeave={handleInputChange}></input>
             {errorName && (
                     <span className="error-text">
-                        &nbsp;&nbsp;
-                        <i className="fas fa-exclamation-circle"></i>
-                        &nbsp;{errorName}
+                        {errorName}
                     </span>
                 )} 
             <input data-testid='email' className="input" value={email} id="email" type="email" placeholder="Your Email" onChange={handleInputChange} onMouseLeave={handleInputChange}></input>
             {errorEmail && (
                     <span className="error-text">
-                        &nbsp;&nbsp;
-                        <i className="fas fa-exclamation-circle"></i>
-                        &nbsp;
                         {errorEmail}
                     </span>
                 )}
             <textarea data-testid='text-box'value={message} id="message" placeholder="Your Message" type="text" onChange={handleInputChange} onMouseLeave={handleInputChange}></textarea>
             {errorMessage && (
                     <span className="error-text">
-                        &nbsp;&nbsp;
-                        <i className="fas fa-exclamation-circle"></i>
-                        &nbsp;{errorMessage}
+                       {errorMessage}
                     </span>
                 )}
             <input data-testid='submitButton' type="submit" className="Submit" value="Submit" onClick={handleFormSubmit}></input>
