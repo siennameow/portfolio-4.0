@@ -28,12 +28,12 @@ This portfolio website is built up with [React](https://reactjs.org/). Core skil
 
 Desktop Version
 
-
+![Sienna Li Portfolio (3)](https://user-images.githubusercontent.com/101283174/171313345-0d6f45ce-470c-4115-9002-24f4ed2c0223.gif)
 
 
 Mobile Version  
 
-
+![Sienna Li Portfolio 2gif](https://user-images.githubusercontent.com/101283174/171313354-b815b002-ffb6-4057-9878-8e2dc5a0016e.gif)
 
 
 ## Sections 📚
@@ -77,7 +77,6 @@ If you want to use the template to create your own portfolio, you can :
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [JSX](https://reactjs.org/docs/introducing-jsx.html)
 * [Bootstrap](https://getbootstrap.com/)
-* [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/)
 * [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## License 📜
