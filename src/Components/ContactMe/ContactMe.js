@@ -4,119 +4,158 @@
 //THEN I receive a notification that this field is required
 //WHEN I enter text into the email address field
 //THEN I receive a notification if I have entered an invalid email address
-import React, { useState} from 'react';
-import './ContactMe.css';
-import '../../Terminals/Terminal.css'
-import { validateEmail, validateText } from '../../Resources/util/helpers'
+import React, { useState } from "react";
+import "./ContactMe.css";
+import "../../Terminals/Terminal.css";
+import { validateEmail, validateText } from "../../Resources/util/helpers";
 
-const ContactMe = () =>{
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+const ContactMe = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    const [errorName, setErrorName] = useState("");
-    const [errorEmail, setErrorEmail] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
+  const [errorName, setErrorName] = useState("");
+  const [errorEmail, setErrorEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.id;
-        const inputValue = target.value;
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.id;
+    const inputValue = target.value;
 
-        if (inputType === "name") {
-            setName(inputValue);
-            if (!validateText(inputValue)) {
-                setErrorName("Please enter a name.");
-            } else {
-                setErrorName("");
-            }
-        } else if (inputType === "email") {
-            setEmail(inputValue);
-            if (!validateEmail(inputValue)) {
-                setErrorEmail("Please enter a valid email.");
-            } else {
-                setErrorEmail("");
-            }
-        } else {
-            setMessage(inputValue);
-            if (!validateText(inputValue)) {
-                setErrorMessage("Please leave a message.");
-            } else {
-                setErrorMessage("");
-            }
-        }
-    };
-    const handleFormSubmit = (e) => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)
-        e.preventDefault();
+    if (inputType === "name") {
+      setName(inputValue);
+      if (!validateText(inputValue)) {
+        setErrorName("Please enter a name.");
+      } else {
+        setErrorName("");
+      }
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+      if (!validateEmail(inputValue)) {
+        setErrorEmail("Please enter a valid email.");
+      } else {
+        setErrorEmail("");
+      }
+    } else {
+      setMessage(inputValue);
+      if (!validateText(inputValue)) {
+        setErrorMessage("Please leave a message.");
+      } else {
+        setErrorMessage("");
+      }
+    }
+  };
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
 
-        let error = false;
-        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-        if (!validateText(name)) {
-            setErrorName(`Please enter a name.`);
-            error = true;
-        }
+    let error = false;
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateText(name)) {
+      setErrorName(`Please enter a name.`);
+      error = true;
+    }
 
-        if (!validateEmail(email)) {
-            setErrorEmail("Please enter a valid email.");
-            error = true;
-        }
-        if (!validateText(message)) {
-            setErrorMessage(`Please leave a message.`);
-            error = true;
-        }
+    if (!validateEmail(email)) {
+      setErrorEmail("Please enter a valid email.");
+      error = true;
+    }
+    if (!validateText(message)) {
+      setErrorMessage(`Please leave a message.`);
+      error = true;
+    }
 
-        if (error) {
-            return;
-        }
+    if (error) {
+      return;
+    }
 
-        setName("");
-        setEmail("");
-        setMessage("");
-        alert("Email generated");
-    };
-        return(
-    <div className = "main">
-        <form className="contactForm">
-            <h3>Contact Me</h3>
-            <p>If you have a question or simply want to say hello.</p>
-          
-            <input data-testid='name' className="input form-control" value={name} id="name" type="text" placeholder="Your Name" onChange={handleInputChange} onMouseLeave={handleInputChange}></input>
-            {errorName && (
-                    <span className="error-text">
-                        {errorName}
-                    </span>
-                )} 
-            <input data-testid='email' className="input" value={email} id="email" type="email" placeholder="Your Email" onChange={handleInputChange} onMouseLeave={handleInputChange}></input>
-            {errorEmail && (
-                    <span className="error-text">
-                        {errorEmail}
-                    </span>
-                )}
-            <textarea data-testid='text-box'value={message} id="message" placeholder="Your Message" type="text" onChange={handleInputChange} onMouseLeave={handleInputChange}></textarea>
-            {errorMessage && (
-                    <span className="error-text">
-                       {errorMessage}
-                    </span>
-                )}
-            <input data-testid='submitButton' type="submit" className="Submit" value="Submit" onClick={handleFormSubmit}></input>
-        </form>
+    setName("");
+    setEmail("");
+    setMessage("");
+    alert("Email generated");
+  };
+  return (
+    <div className="main">
+      <form className="contactForm form">
+        <h3>Contact Me</h3>
+        <p>If you have a question or simply want to say hello.</p>
+
+        <input
+          data-testid="name"
+          className="input"
+          value={name}
+          id="name"
+          type="text"
+          placeholder="Your Name"
+          onChange={handleInputChange}
+          onMouseLeave={handleInputChange}
+        ></input>
+        {errorName && (
+          <span className="error-text">
+            &nbsp;&nbsp;
+            <i className="fas fa-exclamation-circle"></i>
+            &nbsp;{errorName}
+          </span>
+        )}
+        <input
+          data-testid="email"
+          className="input"
+          value={email}
+          id="email"
+          type="email"
+          placeholder="Your Email"
+          onChange={handleInputChange}
+          onMouseLeave={handleInputChange}
+        ></input>
+        {errorEmail && (
+          <span className="error-text">
+            &nbsp;&nbsp;
+            <i className="fas fa-exclamation-circle"></i>
+            &nbsp;
+            {errorEmail}
+          </span>
+        )}
+        <textarea
+          data-testid="text-box"
+          value={message}
+          id="message"
+          placeholder="Your Message"
+          type="text"
+          onChange={handleInputChange}
+          onMouseLeave={handleInputChange}
+        ></textarea>
+        {errorMessage && (
+          <span className="error-text">
+            &nbsp;&nbsp;
+            <i className="fas fa-exclamation-circle"></i>
+            &nbsp;{errorMessage}
+          </span>
+        )}
+        <input
+          data-testid="submitButton"
+          type="submit"
+          className="Submit"
+          value="Submit"
+          onClick={handleFormSubmit}
+        ></input>
+      </form>
     </div>
-    );
-    
-    // return(
-    // <div className = "main">
-    //     <form onSubmit={submit}className="contactForm">
-    //         <h3>Contact Me</h3>
-    //         <p>If you have a question or simply want to say hello.</p>
-    //         <input data-testid='name' className="input" id="name" type="text" placeholder="Your Name"></input>
-    //         <input data-testid='email' className="input" id="email" type="email" placeholder="Your Email"></input>
-    //         <textarea data-testid='text-box' id="content" placeholder="Talk About Anything"></textarea>
-    //         <input data-testid='submitButton' type="submit" className="Submit" value="Submit"></input>
-    //     </form>
-    // </div>
-    // );
-}
+  );
+
+  // return(
+  // <div className = "main">
+  //     <form onSubmit={submit}className="contactForm">
+  //         <h3>Contact Me</h3>
+  //         <p>If you have a question or simply want to say hello.</p>
+  //         <input data-testid='name' className="input" id="name" type="text" placeholder="Your Name"></input>
+  //         <input data-testid='email' className="input" id="email" type="email" placeholder="Your Email"></input>
+  //         <textarea data-testid='text-box' id="content" placeholder="Talk About Anything"></textarea>
+  //         <input data-testid='submitButton' type="submit" className="Submit" value="Submit"></input>
+  //     </form>
+  // </div>
+  // );
+};
 
 // const submit = (e) =>{
 //     e.preventDefault();
