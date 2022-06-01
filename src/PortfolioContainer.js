@@ -154,7 +154,7 @@ class PortfolioContainer extends PureComponent {
   }
 
   FooterLinks(){
-    return <ul className="links">
+    return <ul className="links" style={{listStyle: 'none'}}>
             {
               Footer.map((footerItem,index)=>{
                 const Icon = footerItem.icon;
