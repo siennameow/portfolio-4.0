@@ -89,7 +89,7 @@ const ContactMe = () => {
           type="text"
           placeholder="Your Name"
           onChange={handleInputChange}
-          onMouseLeave={handleInputChange}
+          onBlur={handleInputChange}
         ></input>
         {errorName && (
           <span className="error-text">
@@ -106,7 +106,7 @@ const ContactMe = () => {
           type="email"
           placeholder="Your Email"
           onChange={handleInputChange}
-          onMouseLeave={handleInputChange}
+          onBlur={handleInputChange}
         ></input>
         {errorEmail && (
           <span className="error-text">
@@ -123,7 +123,7 @@ const ContactMe = () => {
           placeholder="Your Message"
           type="text"
           onChange={handleInputChange}
-          onMouseLeave={handleInputChange}
+          onBlur={handleInputChange}
         ></textarea>
         {errorMessage && (
           <span className="error-text">
