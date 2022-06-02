@@ -80,7 +80,6 @@ const ContactMe = () => {
       <form className="contactForm form">
         <h3>Contact Me</h3>
         <p>If you have a question or simply want to say hello.</p>
-
         <input
           data-testid="name"
           className="input"
@@ -91,13 +90,11 @@ const ContactMe = () => {
           onChange={handleInputChange}
           onBlur={handleInputChange}
         ></input>
-        {errorName && (
-          <span className="error-text">
-            &nbsp;&nbsp;
-            <i className="fas fa-exclamation-circle"></i>
-            &nbsp;{errorName}
-          </span>
-        )}
+        <p>
+          {errorName && (
+            <span className="error-text text-danger">{errorName}</span>
+          )}
+        </p>
         <input
           data-testid="email"
           className="input"
@@ -108,14 +105,11 @@ const ContactMe = () => {
           onChange={handleInputChange}
           onBlur={handleInputChange}
         ></input>
-        {errorEmail && (
-          <span className="error-text">
-            &nbsp;&nbsp;
-            <i className="fas fa-exclamation-circle"></i>
-            &nbsp;
-            {errorEmail}
-          </span>
-        )}
+        <p>
+          {errorEmail && (
+            <span className="error-text text-danger">{errorEmail}</span>
+          )}
+        </p>
         <textarea
           data-testid="text-box"
           value={message}
@@ -125,13 +119,11 @@ const ContactMe = () => {
           onChange={handleInputChange}
           onBlur={handleInputChange}
         ></textarea>
-        {errorMessage && (
-          <span className="error-text">
-            &nbsp;&nbsp;
-            <i className="fas fa-exclamation-circle"></i>
-            &nbsp;{errorMessage}
-          </span>
-        )}
+        <p>
+          {errorMessage && (
+            <span className="error-text text-danger">&nbsp;{errorMessage}</span>
+          )}
+        </p>
         <input
           data-testid="submitButton"
           type="submit"
